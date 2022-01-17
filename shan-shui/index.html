@@ -45,6 +45,27 @@
         table {
           border-bottom: 1px solid rgba(0,0,0,0.1);
         }
+        .side-panel {
+          width: 31px;
+          text-align: center;
+          top: -1px;
+          color: rgba(-1,0,0,0.4);
+          cursor: pointer;
+          height: 100vh;
+          border: 0px solid rgba(0,0,0,0.4);
+          padding: 5px;
+        }
+        .side-button  {
+          display: grid;
+          place-content: center;
+        }
+        .side-button div {
+          vertical-align:middle;
+          display:table-cell"
+        }
+        .side-panel:hover {
+          background: rgba(255, 239, 207, 0.9)
+        }
         #BG {
           min-width: 100vw;
-        }</style><script defer="defer" src="main.ee28d54820f4d5b37c73.js"></script></head><body><div id="button-container"><input value="4242" id="seed" type="number"></div><div id="svg-container"></div><canvas style="display:none" id="bg-canvas"></canvas><table style="border-bottom: 1px solid rgba(0,0,0,0.1);"><tr><td><div id="L"><div id="L.t"><font size="6px">&#x3008;</font></div></div></td><td><div id="BG"></div></td><td><div id="R"><div id="R.t"><font size="6px">&#x3009;</font></div></div></td></tr></table></body></html>
+        }</style><script defer="defer" src="main.61028ea6180d14639b2a.js"></script></head><body><div id="button-container"><input value="4242" id="seed" type="number"></div><canvas style="display:none" id="bg-canvas"></canvas><table style="border-bottom: 1px solid rgba(0,0,0,0.1);"><tr><td class="side-panel"><div id="L" class="side-button"><div id="L.t"><font size="6px">&#x3008;</font></div></div></td><td><div id="BG"></div></td><td class="side-panel"><div id="R" class="side-button"><div id="R.t"><font size="6px">&#x3009;</font></div></div></td></tr></table></body></html>
