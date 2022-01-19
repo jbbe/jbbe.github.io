@@ -22,11 +22,15 @@
             width: 512px;
         }
         #button-container {
-            position: absolute;
-            left: 5px;
-            top: 10px;
+            /* position: absolute; */
+            /* left: 5px;
+            top: 10px; */
             display: flex;
             flex-direction: column;
+            position:fixed; 
+            z-index:1000; 
+            left: 4px; 
+            top: 3px;
             
         }
         button {
@@ -68,4 +72,23 @@
         }
         #BG {
           min-width: 100vw;
-        }</style><script defer="defer" src="main.61028ea6180d14639b2a.js"></script></head><body><div id="button-container"><input value="4242" id="seed" type="number"></div><canvas style="display:none" id="bg-canvas"></canvas><table style="border-bottom: 1px solid rgba(0,0,0,0.1);"><tr><td class="side-panel"><div id="L" class="side-button"><div id="L.t"><font size="6px">&#x3008;</font></div></div></td><td><div id="BG"></div></td><td class="side-panel"><div id="R" class="side-button"><div id="R.t"><font size="6px">&#x3009;</font></div></div></td></tr></table></body></html>
+        }
+
+        #SET_BTN {
+          width: 32px;
+          height: 32px;
+          color:rgba(0,0,0,0.4);
+          border: 1px solid rgba(0,0,0,0.4);
+          text-align: center;
+          display: table;
+          cursor: pointer;
+          background-color: rgba(0,0,0,0);
+        }
+        #SET_BTN:hover {
+          background-color: rgba(0,0,0,0);
+        }
+        #MENU {
+          display:none;
+          background-color: rgba(0,0,0,0.1);
+          border: 1px solid rgba(0,0,0,0.4);
+        }</style><script defer="defer" src="main.400ddec5811a5edc9ba4.js"></script></head><body><div id="button-container"><div id="SET_BTN" title="Settings"><div style="display:table-cell; vertical-align: middle;"><font id="SET_BTN.t" size="4px" class="closed">&#x2630;</font></div></div><div style="height:4px"></div><div id="MENU"><table><tr><td><pre>SEED</pre></td></tr><tr><td><input title="random seed" id="seed" value="2666"/> <button id="gen-seed">Generate</button></td></tr><tr><td><pre>VIEW</pre></td></tr><tr><td><button title="view left" onclick="xcroll(-parseFloat(document.getElementById('INC_STEP').value))"></button> <input title="increment step" id="INC_STEP" type="number" value="200" min="0" max="10000" step="20"/> <button title="view right" onclick="xcroll(parseFloat(document.getElementById('INC_STEP').value))"></button></td></tr><tr><td><pre><input id="AUTO_SCROLL" type="checkbox">Auto-scroll</pre></td><td></td></tr><tr><td><pre>SAVE</pre></td></tr></table></div></div><canvas style="display:none" id="bg-canvas"></canvas><table style="border-bottom: 1px solid rgba(0,0,0,0.1);"><tr><td class="side-panel"><div id="L" class="side-button"><div id="L.t"><font size="6px">&#x3008;</font></div></div></td><td><div id="BG"></div></td><td class="side-panel"><div id="R" class="side-button"><div id="R.t"><font size="6px">&#x3009;</font></div></div></td></tr></table></body></html>
